@@ -106,7 +106,7 @@ const Login = () => {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} md={12} lg={12} textAlign='center' sx={{position: 'absolute', bottom: 60}}>
+                <Grid container item xs={12} md={12} lg={12} textAlign='center'>
                     <div
                      style={{
                         textAlign: 'center',
@@ -142,7 +142,7 @@ const Login = () => {
                         }}/> 
                     </div>
                 </Grid>
-                <Grid container textAlign="center" sx={{position: 'absolute', bottom: 20}}>
+                <Grid container textAlign="center" item>
                     <Grid item xs={12} sm={12} md={12}>
                         <Typography variant="subtitle2">
                         This site uses cookies to analyze non-identifiable web traffic data. DOST-PHIVOLCS is committed to protect and respect your personal data privacy in compliance with the Data Privacy Act of 2012.
