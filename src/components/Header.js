@@ -30,7 +30,7 @@ const Header = () => {
     return(
         <Fragment>
             <Grid container style={{background: '#16526D'}}>
-                <Grid item xs={8} sm={8} md={8} lg={8}>
+                <Grid item xs={12} sm={12} md={12} lg={12}>
                     <div
                         style={{
                         textAlign: 'left',
@@ -48,33 +48,6 @@ const Header = () => {
                         style={{fontWeight: '300', color: 'white'}}>
                         Iloilo PDRRMO
                         </Typography>
-                    </div>
-                </Grid>
-                <Grid item xs={4} sm={4} md={4} lg={4}>
-                    <div style={{textAlign: 'end', marginRight: 20}}>
-                        <IconButton
-                            id="button"
-                            aria-controls={open ? 'menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
-                            sx={{p: 2, mt: 4}}>
-                            <MenuIcon alt="Menu" sx={{color: 'white'}} />
-                            </IconButton>
-                            <Menu
-                            id="menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'button',
-                            }}>
-                            {/* <MenuItem onClick={handleClose}>Resources</MenuItem>
-                            <MenuItem onClick={handleClose}>Feedback</MenuItem> */}
-                            <MenuItem onClick={() => (window.location = '/')}>
-                                Logout
-                            </MenuItem>
-                            </Menu>
                     </div>
                 </Grid>
             </Grid>
