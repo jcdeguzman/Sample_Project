@@ -17,18 +17,15 @@ import Login from './components/Login';
 
 const App = props => {
   const AppHeader = () => {
-    let location = window.location.pathname;
-    if (location !== '/login' && location !== '/'){
-      return <Header/>
-    }
+    return <Header/>
+    
   }
   return (
     <Fragment>
       <Router>
         {AppHeader()}
         <Routes>
-          <Route exact path="" element={<Login />} />
-          <Route exact path="/login" element={<Login />} />
+          <Route exact path="" element={<Main/>} />
           <Route exact path="/main" element={<Main/>}/>
           <Route exact path="/controls" element={<Controls />} />
           <Route exact path="/timeline" element={<TimelinePage />} />

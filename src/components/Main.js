@@ -1,15 +1,15 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Grid, Typography } from '@mui/material'
-
 import Sidebar from "./Sidebar";
 import Maps from "./Map";
 import ControlButtons from "./ControlButtons";
-import TimelinePage from "./TimelinePage";
 
 const Main = () => {
 
-    const [zoomedLocation, setZoomedLocation] = useState({lat: 11.15405761270904, lng: 122.48382568359376})
-    const [zoom, setZoom] = useState(9)
+
+    const [zoomedLocation, setZoomedLocation] = useState({lat: 11.15405761270903, lng: 122.48382568359376})
+    const [zoom, setZoom] = useState(7)
+
     const [mapType, setMapType] = useState("street");
     const [sites, setSites] = useState({
         BLC: true,
@@ -30,7 +30,7 @@ const Main = () => {
 
     return(
         <Grid>
-            <ControlButtons 
+            {/* <ControlButtons 
                 mapType={mapType}
                 setMapType={setMapType}
                 filters={filters}
@@ -38,14 +38,14 @@ const Main = () => {
                 setZoomedLocation={setZoomedLocation}
                 setZoom={setZoom}
                 zoom={zoom}
-            />
-            <Sidebar
+            /> */}
+            {/* <Sidebar
                 zoomedLocation={zoomedLocation}
                 setZoomedLocation={setZoomedLocation}
                 setZoom={setZoom}
                 sites={sites}
                 zoom={zoom}
-                />
+                /> */}
             <Maps 
                 mapType={mapType} 
                 sites={sites}
