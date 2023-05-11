@@ -6,8 +6,10 @@ import ControlButtons from "./ControlButtons";
 
 const Main = () => {
 
+
     const [zoomedLocation, setZoomedLocation] = useState({lat: 11.15405761270903, lng: 122.48382568359376})
     const [zoom, setZoom] = useState(7)
+
     const [mapType, setMapType] = useState("street");
     const [sites, setSites] = useState({
         BLC: true,
